@@ -25,6 +25,7 @@ header {
 }
 
 footer {
+    margin-top: 90px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -68,7 +69,7 @@ h1 {
 }
 
 h2 {
-    font-size: 2em;
+    font-size: 2.5em;
     margin-top: 30px;
 }
 
@@ -76,8 +77,8 @@ h3 {
     font-size: 1.5em;
 }
 
-a {
-    color: #3498db; 
+a:link, a:visited {
+    color: #ffffff;
     text-decoration: none;
 }
 
@@ -100,4 +101,35 @@ img.header{
 
 img.footer{
     width:150px;
+}
+
+img.appicon{
+    width: 50px;
+    float: left;
+    padding-right: 10px;
+}
+
+h3.appicon{
+    margin-bottom: 30px;
+}
+
+h2 a:hover,
+h3 a:hover{
+    color:#3498db;
+}
+
+a.footer{
+    color:#3498db;
+    text-decoration: none;
+}
+
+a.footer:hover{
+    text-decoration: underline;
+}
+
+p.article-date{
+    color: #777;
+    font-style: italic;
+    font-size: 0.9em;
+    margin: 0;
 }
