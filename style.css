@@ -139,3 +139,11 @@ h2.clickable,
 h3.clickable{
     text-decoration: underline;
 }
+
+.header {
+    transition: transform 0.3s ease;
+}
+  
+.header:hover {
+    transform: scale(1.1);
+}
