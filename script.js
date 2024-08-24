@@ -5,6 +5,6 @@ function loadHTML(elementId, file) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    loadHTML('header', '/website/header.html');
-    loadHTML('footer', '/website/footer.html');
+    loadHTML('header', '/header.html');
+    loadHTML('footer', '/footer.html');
 });
