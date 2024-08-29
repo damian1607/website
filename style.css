@@ -147,3 +147,25 @@ h3.clickable{
 .header:hover {
     transform: scale(1.1);
 }
+
+p.notfound{
+    font-size: 2em;
+    margin-top: 30px;
+    font-weight: normal;
+}
+
+div.notfound{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+a.notfound{
+    color:#3498db;
+    text-decoration: none;
+    font-size: 2em;
+}
+a.notfound:hover{
+    text-decoration: underline;
+}
