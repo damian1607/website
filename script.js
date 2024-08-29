@@ -1,10 +1,29 @@
-function loadHTML(elementId, file) {
-    fetch(file)
-        .then(response => response.text())
-        .then(data => document.getElementById(elementId).innerHTML = data);
+class MyHeader extends HTMLElement {
+    connectedCallback() {
+    this.innerHTML = `
+    <header>
+    <a href="/"><img class="header" src="/images/logo.png" /></a>
+    <nav>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="#">Downloads</a></li>
+    </ul>
+    </nav>
+    </header>
+    `;
+    }
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-    loadHTML('header', '/header.html');
-    loadHTML('footer', '/footer.html');
-});
+class MyFooter extends HTMLElement {
+    connectedCallback() {
+    this.innerHTML = `<footer>
+    <a href="/"><img class="footer" src="/images/logo.png" /></a>
+    <a class="footer" href="/privacy-policy">Datenschutzerklärung</a>
+    <p>&lt;3</p>
+    </footer>
+    `;
+    }
+}
+      
+customElements.define('my-header', MyHeader);
+customElements.define('my-footer', MyFooter);
