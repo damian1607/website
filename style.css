@@ -169,3 +169,8 @@ a.notfound{
 a.notfound:hover{
     text-decoration: underline;
 }
+
+.header-placeholder {
+    height: 120px; 
+    background-color: transparent;
+}
