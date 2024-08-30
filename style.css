@@ -1,176 +1,178 @@
 @keyframes fade-in {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 body {
-    background-color: #121212;
-    color: #e0e0e0;
-    font-family:sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    animation: fade-in 0.2s ease-in;
+  background-color: #121212;
+  color: #e0e0e0;
+  font-family: sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  animation: fade-in 0.2s ease-in;
 }
 
 header {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 10px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
 }
 
 footer {
-    margin-top: 90px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-top: 2px solid #444;
-    padding: 20px;
-    border-radius: 10%;
-    background-color: #171717;
+  margin-top: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-top: 2px solid #444;
+  padding: 20px;
+  border-radius: 10%;
+  background-color: #171717;
 }
 
 nav ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 
-
 nav ul li a {
-    margin-left: 20px;
-    color: #e0e0e0;
-    text-decoration: none;
-    font-size: 1em;
+  margin-left: 20px;
+  color: #e0e0e0;
+  text-decoration: none;
+  font-size: 1em;
 }
 
 .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-h1, h2, h3 {
-    color: #ffffff;
-    font-weight: bold;
-    margin-bottom: 10px;
-    line-height: 1.2;
+h1,
+h2,
+h3 {
+  color: #ffffff;
+  font-weight: bold;
+  margin-bottom: 10px;
+  line-height: 1.2;
 }
 
 h1 {
-    font-size: 3.5em;
-    margin-bottom: 20px;
+  font-size: 3.5em;
+  margin-bottom: 20px;
 }
 
 h2 {
-    font-size: 2.5em;
-    margin-top: 30px;
+  font-size: 2.5em;
+  margin-top: 30px;
 }
 
 h3 {
-    font-size: 1.5em;
+  font-size: 1.5em;
 }
 
-a:link, a:visited {
-    color: #ffffff;
-    text-decoration: none;
+a:link,
+a:visited {
+  color: #ffffff;
+  text-decoration: none;
 }
 
 a:hover {
-    color: #3498db;
+  color: #3498db;
 }
 
 p {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 em {
-    font-style: normal;
-    font-weight: bold;
+  font-style: normal;
+  font-weight: bold;
 }
 
-img.header{
-    width:200px;
+img.header {
+  width: 200px;
 }
 
-img.footer{
-    width:150px;
+img.footer {
+  width: 150px;
 }
 
-img.appicon{
-    width: 50px;
-    float: left;
-    padding-right: 10px;
+img.appicon {
+  width: 50px;
+  float: left;
+  padding-right: 10px;
 }
 
-h3.appicon{
-    margin-bottom: 30px;
+h3.appicon {
+  margin-bottom: 30px;
 }
 
 h2 a:hover,
-h3 a:hover{
-    color:#3498db;
+h3 a:hover {
+  color: #3498db;
 }
 
-a.footer{
-    color:#3498db;
-    text-decoration: none;
+a.footer {
+  color: #3498db;
+  text-decoration: none;
 }
 
-a.footer:hover{
-    text-decoration: underline;
+a.footer:hover {
+  text-decoration: underline;
 }
 
-p.article-date{
-    color: #777;
-    font-style: italic;
-    font-size: 0.9em;
-    margin: 0;
+p.article-date {
+  color: #777;
+  font-style: italic;
+  font-size: 0.9em;
+  margin: 0;
 }
 
 h2.clickable,
-h3.clickable{
-    text-decoration: underline;
+h3.clickable {
+  text-decoration: underline;
 }
 
 .header {
-    transition: transform 0.3s ease;
+  transition: transform 0.3s ease;
 }
-  
+
 .header:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
-p.notfound{
-    font-size: 2em;
-    margin-top: 30px;
-    font-weight: normal;
+p.notfound {
+  font-size: 2em;
+  margin-top: 30px;
+  font-weight: normal;
 }
 
-div.notfound{
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: center;
+div.notfound {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
 }
 
-a.notfound{
-    color:#3498db;
-    text-decoration: none;
-    font-size: 2em;
+a.notfound {
+  color: #3498db;
+  text-decoration: none;
+  font-size: 2em;
 }
-a.notfound:hover{
-    text-decoration: underline;
+a.notfound:hover {
+  text-decoration: underline;
 }
 
 .header-placeholder {
-    height: 120px; 
-    background-color: transparent;
+  height: 120px;
+  background-color: transparent;
 }
