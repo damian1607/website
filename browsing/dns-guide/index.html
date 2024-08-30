@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>damian | Browser-Setup</title>
+    <link rel="icon" href="/images/icon.ico" />
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <div class="header-placeholder"><my-header></my-header></div>
+
+    <div class="container">
+      <a href="/browsing">&#8617; Browsing</a>
+      <h1>DNS Guide</h1>
+      <p class="article-date">27.08.2024</p>
+
+      <p>
+        Das Domain Name System (DNS) ist ein essenzieller Dienst im Internet,
+        der dafür sorgt, dass menschenlesbare Domainnamen in numerische
+        IP-Adressen umgewandelt werden, die von Netzwerken verarbeitet werden
+        können. Da der DNS-Server jede Anfrage, die beim Browsen im Internet
+        gestellt wird, empfängt, ist die manuelle Auswahl eines DNS-Resolvers
+        von großer Bedeutung für Privatsphäre im Internet.
+      </p>
+
+      <h2>Warum sollte man sich darüber Gedanken machen?</h2>
+      <p>
+        <em>Ein Beispiel:</em> Man möchte sich auf YouTube ein Video ansehen.
+        Man gibt dafür natürlich die einem bekannte Adresse "youtube.com" ein.
+        Das Netzwerk weiß aber nicht, was es mit dieser Adresse anfangen soll.
+        Deshalb schickt es eine Anfrage an den DNS-Resolver, der eine der
+        IP-Adressen von YouTube zurückgibt (z.B. 208.65.153.238). Jetzt versteht
+        das Netzwerk auch, was es tun soll und man gelangt auf die Seite.
+      </p>
+      <p>
+        Das bedeutet natürlich, jedes Mal, wenn man eine Internetseite besucht,
+        schickt man automatisch eine Anfrage an den DNS-Resolver. Dieser weiß
+        dadurch natürlich genau auf welchen Seiten du dich aufhältst. Deshalb
+        ist die bewusste Wahl eines DNS-Resolvers, der deine Privatsphäre
+        respektiert sehr wichtig. Denn wenn man ihn nicht manuell auswählt,
+        verwendet man automatisch den von seinem Internetanbieter.
+      </p>
+
+      <h2>Was macht einen guten DNS-Resolver aus?</h2>
+      <p>
+        Ein guter DNS-Resolver zeichnet sich primär durch seine Logging-Policy
+        aus, die es ihm verbietet, Daten über seine Nutzer zu speichern und zu
+        verwenden und über die Sicherheitsprotokolle, die der Server zum Schutz
+        seiner Nutzer verwendet. Um die Privatsphäre zu erhöhen, können Benutzer
+        einen DNS-Resolver wählen, der verschlüsselte Protokolle wie
+        DNS-over-TLS (DoT) oder DNS-over-HTTPS (DoH) unterstützt. Diese
+        Protokolle verschlüsseln die DNS-Anfragen, wodurch es für Dritte
+        schwieriger wird, den Datenverkehr zu überwachen oder zu manipulieren.
+      </p>
+      <a
+        style="color: #3498db"
+        href="https://www.privacyguides.org/en/dns/"
+        target="_blank"
+        >(Hier ist eine Liste an vertauenswürdigen DNS-Resolvern)</a
+      >
+      <p></p>
+
+      <img class="appicon" src="/images/app-icons/nextdns.png" />
+      <h3 class="appicon">
+        <a href="https://my.nextdns.io/start" target="_blank">NextDNS</a>
+      </h3>
+      <p>
+        NextDNS ist ein DNS-Resolver, der besonders gut für den Schutz der
+        Privatsphäre geeignet ist. Er bietet viele Anpassungsmöglichkeiten und
+        Sicherheitsfunktionen, wie das Erkennen von Bedrohungen und das
+        Blockieren von Werbung. Mit NextDNS können Nutzer ihre DNS-Anfragen
+        verschlüsseln und genau sehen, welche Anfragen blockiert wurden. Das
+        gibt ihnen mehr Kontrolle und Sicherheit beim Surfen im Internet.
+        Deshalb ist NextDNS eine gute Wahl für alle, die ihre Privatsphäre im
+        Netz verbessern möchten.
+      </p>
+    </div>
+    <my-footer></my-footer>
+  </body>
+</html>

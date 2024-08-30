@@ -33,7 +33,6 @@ footer {
   border-top: 2px solid #444;
   padding: 20px;
   border-radius: 10%;
-  background-color: #171717;
 }
 
 nav ul {
@@ -43,11 +42,15 @@ nav ul {
   padding: 0;
 }
 
+ul li {
+  font-size: 1.3rem;
+}
+
 nav ul li a {
   margin-left: 20px;
   color: #e0e0e0;
   text-decoration: none;
-  font-size: 1em;
+  font-size: 1.3rem;
 }
 
 .container {
@@ -60,36 +63,45 @@ h1,
 h2,
 h3 {
   color: #ffffff;
-  font-weight: bold;
+  font-weight: 600;
   margin-bottom: 10px;
   line-height: 1.2;
 }
 
 h1 {
-  font-size: 3.5em;
+  font-size: 3rem;
   margin-bottom: 20px;
 }
 
 h2 {
-  font-size: 2.5em;
+  font-size: 2rem;
   margin-top: 30px;
 }
 
 h3 {
-  font-size: 1.5em;
+  font-size: 1.5rem;
+}
+
+h1 a,
+h2 a,
+h3 a {
+  font-size: inherit !important;
+  color: inherit;
 }
 
 a:link,
 a:visited {
-  color: #ffffff;
+  font-size: 1.3rem;
+  color: #3498db;
   text-decoration: none;
 }
 
 a:hover {
-  color: #3498db;
+  text-decoration: underline;
 }
 
 p {
+  font-size: 1.3rem;
   margin-bottom: 20px;
 }
 
@@ -116,30 +128,11 @@ h3.appicon {
   margin-bottom: 30px;
 }
 
-h2 a:hover,
-h3 a:hover {
-  color: #3498db;
-}
-
-a.footer {
-  color: #3498db;
-  text-decoration: none;
-}
-
-a.footer:hover {
-  text-decoration: underline;
-}
-
 p.article-date {
   color: #777;
   font-style: italic;
-  font-size: 0.9em;
+  font-size: 1rem;
   margin: 0;
-}
-
-h2.clickable,
-h3.clickable {
-  text-decoration: underline;
 }
 
 .header {
@@ -175,4 +168,27 @@ a.notfound:hover {
 .header-placeholder {
   height: 120px;
   background-color: transparent;
+}
+
+img.panel {
+  width: 300px;
+  transition: transform 0.3s ease;
+}
+img.panel:hover {
+  transform: scale(1.1);
+}
+
+.panels {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+}
+
+.panelsite {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
 }
