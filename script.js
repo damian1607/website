@@ -6,7 +6,7 @@ class MyHeader extends HTMLElement {
     <nav>
     <ul>
       <li><a href="/">Home</a></li>
-      <li><a href="#">Downloads</a></li>
+      <li><a href="https://github.com/damian1607/website">GitHub-Repo</a></li>
     </ul>
     </nav>
     </header>
