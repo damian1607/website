@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>damian | WinUtil</title>
+    <link rel="icon" href="/images/icon.ico" />
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <div class="header-placeholder"><my-header></my-header></div>
+
+    <div class="container">
+      <a href="/windows">&#8617; Windows</a>
+      <h1>ChrisTitus WinUtil</h1>
+      <p class="article-date">31.08.2024</p>
+
+      <p>
+        Die Windows Utility (kurz WinUtil) von Chris Titus ist ein beliebtes
+        Powershell-Tool, das verschiedene Funktionen hat um Windows-Systeme
+        effizient zu verwalten und zu optimieren. Es ist Open-Source und wird
+        täglich von einer Vielzahl von Developern weiterentwickelt.
+      </p>
+
+      <a href="https://github.com/ChrisTitusTech/winutil" target="_blank"
+        >Hier ist der Source Code</a
+      >
+
+      <h2>Zu den Hauptfunktionen gehören:</h2>
+      <ul>
+        <li>Installation von nützlichen Programmen</li>
+        <p>
+          Man kann von einer riesigen Liste an nützlichen Programmen wählen und
+          sie per Knopfdruck silent-installen lassen. Das bedeutet, man muss
+          sich nicht durch nervige Setups durchklicken. Das geschieht im
+          Hintergrund mit Hilfe des Windows Package Managers (<a
+            href="https://github.com/microsoft/winget-cli"
+            target="_blank"
+            >winget</a
+          >).
+        </p>
+        <li>Debloating/Tweaks</li>
+        <p>
+          Es werden viele Tweaks angeboten, die man für seine Windows-Install
+          ausführen kann. Diese Tweaks dienen dazu, Performance zu steigern,
+          Privatsphäre zu verbessern und unnötige Hintergrunddienste zu
+          minimieren. Ein beliebtes Tool zum Debloaten von Windows, O&O
+          Shutup10, ist ebenfalls integriert und kann über die Utility
+          ausgeführt werden. Es gibt verschiedene Voreinstellungen. Ich
+          empfehle, die Standard Voreinstellung auszuwählen und auszuführen.
+          Falls man sich unsicher ist, was die Tweaks machen, kann man sich
+          alles in der
+          <a
+            href="https://christitustech.github.io/winutil/devdocs/"
+            target="_blank"
+            >Dokumentation</a
+          >
+          durchlesen.
+        </p>
+
+        <li>Update-Management</li>
+        <p>
+          Man hat die Möglichkeit, das Update-Management zu konfigurieren. Die
+          Einstellungsmöglichkeiten sind:
+        </p>
+        <ul>
+          <li>Standard (alle Updates)</li>
+          <li>Security (nur Sicherheitsupdates)</li>
+          <li>Disabled (keine Updates)</li>
+        </ul>
+        <p>
+          Ich empfehle hierbei, auf Security zu stellen. So wird man nicht
+          ständig von Windows Updates genervt und erhält trotzdem alle wichtigen
+          Sicherheitsupdates.
+        </p>
+
+        <li>ISO Customization</li>
+        <p>
+          Mit MicroWin hat man die Möglichkeit, seine eigenes Windows 10/11
+          Installationsmedium zu konfigurieren und es zu debloaten wie man
+          möchte. Wenn man Windows neu aufsetzen möchte, ist dieses Tool sehr
+          hilfreich.
+        </p>
+      </ul>
+
+      <h2>Verwendung</h2>
+      <ul>
+        <h3>Windows 11:</h3>
+        <ol>
+          <li>Win + X</li>
+          <li>Öffne Terminal als Admin</li>
+          <li>Führe folgenden Command aus: irm christitus.com/win | iex</li>
+        </ol>
+        <h3>Windows 10:</h3>
+        <ol>
+          <li>Win + X</li>
+          <li>Öffne Powershell als Admin</li>
+          <li>Führe folgenden Command aus: irm christitus.com/win | iex</li>
+        </ol>
+      </ul>
+    </div>
+    <my-footer></my-footer>
+  </body>
+</html>
