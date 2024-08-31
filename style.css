@@ -12,9 +12,10 @@ body {
   color: #e0e0e0;
   font-family: sans-serif;
   line-height: 1.6;
-  margin: 0;
-  padding: 0;
   animation: fade-in 0.2s ease-in;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
@@ -25,7 +26,7 @@ header {
 }
 
 footer {
-  margin-top: 90px;
+  margin-top: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -57,6 +58,7 @@ nav ul li a {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
+  flex: 1;
 }
 
 h1,
@@ -183,6 +185,7 @@ img.panel:hover {
   justify-content: center;
   align-items: center;
   text-align: center;
+  flex: 1;
 }
 
 .panelsite {
@@ -191,4 +194,5 @@ img.panel:hover {
   align-items: center;
   flex-direction: column;
   text-align: center;
+  flex: 1;
 }
