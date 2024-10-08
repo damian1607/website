@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>damian | Windows Install</title>
+    <link rel="icon" href="/images/icon.ico" />
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <div class="header-placeholder"><my-header></my-header></div>
+
+    <div class="container">
+      <a href="/windows">&#8617; Windows</a>
+      <h1>Best Windows Install</h1>
+      <p class="article-date">08.10.2024</p>
+
+      <p>
+        In diesem Guide zeige ich Schritt für Schritt wie man eine perfekte
+        Neuinstallation von Windows vornimmt. Es ist wichtig zu wissen, dass
+        hierdurch alle Dateien auf dem PC unwiderruflich gelöscht werden. Daher
+        sollte man wichtige Dokumente vorher auf einem externen Speichermedium
+        absichern. Außerdem wird noch ein <em>mindestens</em> 8GB großer
+        USB-Stick gebraucht, auf den man die bootable ISO spielt.
+      </p>
+
+      <h2>1. MicroWin ISO erstellen</h2>
+      <p>
+        <a
+          href="https://christitustech.github.io/winutil/userguide/#microwin"
+          target="_blank"
+          >MicroWin</a
+        >
+        ist ein Projekt von ChrisTitus, mit dem man sich ein Windows
+        Installationsmedium erstellen kann, das weniger überladen ist und
+        weniger Tracking und Telemetrie enthält als die offizielle Version. Dazu
+        öffnet man die <a href="/windows/winutil/">WinUtil</a> und geht zu dem
+        Tab "MicroWin". Dort sieht man auch eine detaillierte Anleitung zum
+        Erstellen der ISO.
+      </p>
+
+      <h2>2. ISO booten</h2>
+      <p>
+        Wenn man die fertige ISO nun hat, ist der nächste Schritt, von dieser
+        ISO aus zu booten. Dazu muss diese auf einen USB-Stick übertragen
+        werden. Es reicht nicht aus, die ISO-Datei einfach auf den Stick zu
+        kopieren. Stattdessen muss der USB-Stick bootfähig gemacht werden, wofür
+        Programme wie
+        <a href="https://rufus.ie/en/" target="_blank">Rufus</a> oder
+        <a href="https://etcher.balena.io/" target="_blank">Balena Etcher</a>
+        verwendet werden können.
+      </p>
+      <p>
+        Wenn man nun den fertigen bootable USB-Stick hat, kann man ihn im PC
+        eingesteckt lassen und dann ins BIOS gehen. Falls man nicht weiß, wie
+        das funktioniert, gibt es zahlreiche Anleitungen online. Im BIOS
+        angekommen, muss man die Boot-Reihenfolge so ändern, dass der USB-Stick
+        an erster Stelle steht. Die Boot-Reihenfolge findet man meistens unter
+        einem Menüpunkt namens "Boot". Anschließend verlässt man das BIOS mit
+        "Save & Reset", und der PC sollte in die Windows-Installation starten.
+      </p>
+      <p>
+        Sobald man bei der Festplattenauswahl ist, empfiehlt es sich, alle
+        Partitionen zu formatieren und zu löschen, damit keine alten Daten mehr
+        vorhanden sind. Zur Installation sollte man dann das schnellste Laufwerk
+        auswählen, das man besitzt.
+      </p>
+
+      <h2>3. Treiber installieren</h2>
+      <p>
+        Nachdem die Windows Installation abgeschlossen wurde, hat man nun den
+        blanken Windows Desktop vor sich. Als erstes wollen wir jetzt unsere
+        Treiber korrekt installieren. Angefangen mit dem Grafikkartentreiber.
+        Diesen findet man hier für
+        <a
+          href="https://www.nvidia.com/en-us/software/nvidia-app/"
+          target="_blank"
+          >Nvidia</a
+        >
+        und
+        <a
+          href="https://www.amd.com/en/support/download/drivers.html"
+          target="_blank"
+          >AMD</a
+        >. Für die besten Einstellungen für Nvidia Grafikkarten, habe ich hier
+        einen separaten Guide. Um Chipset und LAN Treiber zu finden, sucht man
+        im Internet nach seinem Motherboard-Modell. Dort sollte man sie unter
+        dem Reiter "Support & Drivers" finden.
+      </p>
+
+      <h2>4. WinUtil</h2>
+      <p>
+        An diesem Punkt führen wir noch einige Tweaks in der Windows Utility
+        aus. Einen separaten Guide dazu habe ich
+        <a href="/windows/winutil/">hier</a>. Innerhalb der WinUtil kann man
+        auch schon einige Programme installieren, die man benötigt.
+      </p>
+
+      <h2>5. Browser einstellen</h2>
+      <p>
+        An diesem Punkt sollte schon fast alles eingerichtet sein. Nun brauchen
+        wir aber auch noch einen guten Browser. Weitere Informationen dazu
+        erhältst du in diesem <a href="/browsing/browser-setup/">Guide</a>.
+      </p>
+
+      <h2>6. Programme installieren</h2>
+      <p>
+        Nun können alle restlichen Programme installiert werden, die nicht in
+        der Programmliste der WinUtil aufgeführt sind. Eine Liste an von mir
+        abgesegneten, nützlichen Programmen findet man
+        <a href="/windows/software-list/">hier</a>.
+      </p>
+      <p>
+        Nachdem man alle Programme eingerichtet hat, die man benötigt, ist es
+        wichtig, im Task Manager (Strg+ Shift + Esc) unter dem Reiter "Startup
+        Apps" nachzusehen, dass nur die wichtigsten Programme bei Systemstart
+        geöffnet werden. Alles, was nicht immer im Hintergrund laufen soll,
+        sollte hier ausgeschaltet werden.
+      </p>
+    </div>
+    <my-footer></my-footer>
+  </body>
+</html>
