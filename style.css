@@ -196,3 +196,21 @@ img.panel:hover {
   text-align: center;
   flex: 1;
 }
+
+@media (max-width: 768px) {
+  .panels {
+    flex-direction: column; /* Ändert die Richtung der Flexbox von horizontal zu vertikal */
+  }
+
+  img.panel {
+    width: 100%; /* Passt die Breite der Bilder an die Breite des Containers an */
+    max-width: 300px; /* Optional: Begrenzen Sie die maximale Breite */
+  }
+
+  nav ul li a {
+    margin-left: 20px;
+    color: #e0e0e0;
+    text-decoration: none;
+    font-size: 1rem; /* Schriftgröße von 1.3rem auf 1.0rem reduziert */
+  }
+}
