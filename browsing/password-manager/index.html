@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>damian | Password Manager</title>
+    <link rel="icon" href="/images/icon.ico" />
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <div class="header-placeholder"><my-header></my-header></div>
+
+    <div class="container">
+      <a href="/browsing">&#8617; Browsing</a>
+      <h1>Password Manager</h1>
+      <p class="article-date">25.01.2025</p>
+
+      <p>
+        Passwörter schützen all unsere Accounts im Internet und sollten deshalb
+        gut organisiert und sicher aufbewahrt werden. Password Manager bieten
+        hier eine ideale Lösung, indem sie alle Passwörter in einer Art "Tresor"
+        speichern. Auf diesen Tresor kann dann mit Hilfe eines Masterpassworts
+        zugegriffen werden.
+      </p>
+
+      <h2>Was macht es so sicher?</h2>
+      <p>
+        Passwörter werden nicht als reine Hashes, sondern als verschlüsselte
+        Datensätze auf einem Server gespeichert. Im Gegensatz dazu werden im
+        Browser gespeicherte Passwörter oft in lokalen Dateien auf dem PC
+        abgelegt, die einfacher entschlüsselt werden können.
+      </p>
+
+      <h2>Grundregeln für optimale Sicherheit</h2>
+      <ul>
+        <li>
+          <em>Einzigartige Passwörter:</em> Jedes Konto sollte ein
+          einzigartiges, hochkomplexes Passwort haben. Password Manager können
+          solche Passwörter zufällig generieren.
+        </li>
+        <li>
+          <em>Komplexes Masterpasswort:</em> Das Masterpasswort sollte möglichst
+          lang und komplex sein, jedoch trotzdem merkbar.
+        </li>
+        <li>
+          <em>Hohe Verschlüsselungsstandards:</em> Die Verschlüsselung auf der
+          Serverseite sollte modernen Sicherheitsstandards entsprechen.
+        </li>
+      </ul>
+
+      <img class="appicon" src="/images/app-icons/bitwarden.png" />
+      <h3 class="appicon">
+        <a href="https://bitwarden.com/go/start-free/" target="_blank"
+          >Bitwarden</a
+        >
+      </h3>
+      <p>
+        Bitwarden ist eine Open-Source-Lösung (sowohl für Client als auch
+        Server) und bietet höchste Standards für Verschlüsselung. Es verwendet
+        <a
+          href="https://bitwarden.com/help/what-encryption-is-used/#aes-cbc"
+          target="_blank"
+          >AES-CBC</a
+        >
+        mit 256-Bit-Verschlüsselung für die Tresordaten selbst und
+        <a
+          href="https://bitwarden.com/help/what-encryption-is-used/#pbkdf2"
+          target="_blank"
+          >PBKDF2</a
+        >
+        SHA-256 zur Ableitung des Tresorschlüssels.
+      </p>
+      <p>
+        Mit einem kostenlosen Konto können Benutzer unbegrenzt viele Passwörter
+        speichern und dies auf einer unbegrenzten Anzahl von Geräten. Dank der
+        Open-Source-Philosophie können technisch versierte Nutzer sogar ihren
+        eigenen Bitwarden-Server hosten.
+      </p>
+      <p>
+        Der Umstieg auf einen Password Manager gestaltet sich oft sehr einfach,
+        da man seine im Browser gespeicherten Passwörter mit wenigen Klicks
+        importieren kann. Danach sollte man die Browserpasswörter jedoch alle
+        löschen und die Funktion deaktivieren.
+      </p>
+    </div>
+    <my-footer></my-footer>
+  </body>
+</html>
