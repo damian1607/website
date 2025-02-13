@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>damian | Game Clips</title>
+    <link rel="icon" href="/images/icon.ico" />
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <div class="header-placeholder"><my-header></my-header></div>
+
+    <div class="container">
+      <a href="/windows">&#8617; Windows</a>
+      <h1>Game Clips</h1>
+      <p class="article-date">13.02.2025</p>
+
+      <p>
+        Um Game Clips aufzunehmen, gibt es einige Methoden, wie beispielsweise
+        Nvidia Shadowplay, OBS Instant Replay und Medal. Bislang war es mit
+        Medal am einfachsten, diese Clips mit anderen zu teilen. Doch nun gibt
+        es eine neue und bessere Alternative:
+      </p>
+
+      <img class="appicon" src="/images/app-icons/replays.png" />
+      <h2 class="appicon">
+        <a href="https://replays.app/" target="_blank">RePlays</a>
+      </h2>
+
+      <p>
+        RePlays ist eine kostenlose Open-Source App, die auf der
+        leistungsstarken OBS Engine basiert und das Aufnehmen und Teilen von
+        Clips kinderleicht macht - und das ohne versteckte Kosten und
+        Kompromisse.
+      </p>
+
+      <a href="https://github.com/lulzsun/RePlays" target="_blank"
+        >Hier ist der Source Code</a
+      >
+
+      <h2>Vergleich mit Medal</h2>
+      <p>
+        Während RePlays alle Features kostenlos zur Verfügung stellt,
+        verschließt Medal viele Features hinter einem monatlichen
+        <a
+          href="https://medal.tv/blog/posts/medal-vs-medal-premium-benefits-and-features"
+          target="_blank"
+          >Premium-Abonnement</a
+        >.
+      </p>
+      <table>
+        <tr>
+          <th>Feature</th>
+          <th>RePlays</th>
+          <th>Medal</th>
+        </tr>
+        <tr>
+          <td>Kosten</td>
+          <td>✅Kostenlos</td>
+          <td>✅Kostenlos (Premium-Features)</td>
+        </tr>
+        <tr>
+          <td>Werbung</td>
+          <td>✅Werbefrei</td>
+          <td>❌In App Werbung</td>
+        </tr>
+        <tr>
+          <td>Watermarks</td>
+          <td>✅Keine Watermarks</td>
+          <td>❌Watermarks in Clips</td>
+        </tr>
+        <tr>
+          <td>Qualität</td>
+          <td>✅Kein Limit</td>
+          <td>❌Maximal 720p</td>
+        </tr>
+        <tr>
+          <td>Clip-Länge</td>
+          <td>✅Kein Limit</td>
+          <td>❌Maximal 10min</td>
+        </tr>
+      </table>
+
+      <h2>Video Einstellungen</h2>
+      <ul>
+        <li>Replay Buffer</li>
+        <p>
+          Der Replay Buffer speichert die letzten x Sekunden als Video, wenn man
+          den Bookmark Hotkey drückt. Für die Clip Funktion sollte er also
+          aktiviert sein. Außerdem kann man hier die maximale Speicherplatzgröße
+          eines Clips limitieren.
+        </p>
+        <li>Video Quality</li>
+        <p>
+          Wenn man sich nicht allzu sehr auskennt, kann man hier auf eine der
+          Voreinstellungen (Low, Medium, High, Ultra) zurückgreifen. Allerdings
+          lohnt es sich, die Einstellungen an die eigenen Präferenzen
+          anzupassen.
+        </p>
+        <li>Resolution</li>
+        <p>
+          Die Resolution sollte man optimalerweise an die Monitorresolution
+          anpassen. Hat man also einen FullHD Monitor, wählt man 1080p aus.
+        </p>
+        <li>Framerate</li>
+        <p>
+          Die Framerate sollte man nicht zu hoch einstellen, da sie sehr
+          leistungs- und speicherplatzintensiv sein kann. Optimalerweise sollte
+          man 60 FPS einstellen können, falls das zu viel ist, 30 FPS.
+        </p>
+        <li>Encoder</li>
+        <p>
+          Der optimale Encoder hängt sehr von der Hardware ab. Man sollte immer
+          einen Hardware Encoder verwenden, falls möglich. Für NVIDIA
+          Grafikkarten wäre das NVENC (H.264) oder NVENC HEVC (H.265). NVEN HEVC
+          ist dabei moderner. Unter AMD wäre das AMF (Advanced Media Framework)
+          und unter Intel wäre das QSV (Quick Sync Video).
+        </p>
+        <li>Rate Control</li>
+        <p>
+          Rate Control ist eine Methode in der Videokompression, um die
+          Datenrate eines Videos zu steuern, entweder für eine konstante
+          Qualität oder eine konstante Dateigröße.
+        </p>
+        <ul>
+          <li>
+            <em>CBR (Constant Bitrate):</em> Die Datenrate bleibt konstant,
+            unabhängig von der Komplexität des Videos. Dies kann zu
+            Qualitätsschwankungen führen.
+          </li>
+          <li>
+            <em>VBR (Variable Bitrate):</em> Die Datenrate variiert je nach
+            Komplexität der Szene, um eine gleichmäßige Qualität zu
+            gewährleisten. Die Dateigröße kann schwanken.
+          </li>
+          <li>
+            <em>CQP (Constant Quantization Parameter):</em> Die Qualität bleibt
+            konstant, da der Quantisierungsparameter festgelegt ist. Die
+            Datenrate und Dateigröße können stark variieren.
+          </li>
+        </ul>
+        <p>Ich empfehle CQP mit CQ Level 18-20.</p>
+      </ul>
+      <h2>Clips teilen</h2>
+      <p>
+        Um die Clips nun auch mit Freunden oder der Öffentlichkeit zu teilen,
+        hat man mehrere Optionen. Im folgenden werde ich zeigen, wie man den
+        Service von RePlays nutzen kann. Es ist aber wichtig zu wissen, dass man
+        auch jeden anderen beliebigen Service nutzen kann und dabei nicht
+        limitiert wird.
+      </p>
+      <p>
+        1. Um zu starten, benötigt man zuerst einmal ein Konto bei RePlays. Das
+        kann man sich
+        <a href="https://replays.app/Register" target="_blank">hier</a>
+        kostenlos erstellen.
+      </p>
+      <p>
+        2. Anschließend navigiert man in der App unter Settings/Upload und bei
+        Destinations wählt man "RePlays" aus. Dort trägt man seine Accountdaten
+        ein und schon kann man seine Clips bequem aus der App hochladen lassen.
+      </p>
+    </div>
+    <my-footer></my-footer>
+  </body>
+</html>
